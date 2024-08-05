@@ -1,6 +1,9 @@
 import React from 'react'
-import mvp_design from '../public/img/MVP_Design.png'
-import Product_Redesign from '../public/img/Product_Redesign.png'
+import mvp_design from '../public/img/solutions/MVP_Design.png'
+import Product_Redesign from '../public/img/solutions/Product_Redesign.png'
+import team_extension from '../public/img/solutions/team-extension.png'
+import contract_design_partner from '../public/img/solutions/contract_design_partner.png'
+import one_time_projects from '../public/img/solutions/one_time_projects.png'
 import Image from 'next/image'
 const Solutions = () => {
     return (
@@ -29,21 +32,21 @@ const Solutions = () => {
                         <h1 className='font-bold text-lg my-2'>Team Extension</h1>
                         <p className='text-gray'>Expand your team with our dedicated and talented design experts.</p>
                         <div className='flex justify-center'>
-                            <Image src={Product_Redesign} alt="Product Redesign" width={400} />
+                            <Image src={team_extension} alt="Product Redesign" width={400} />
                         </div>
                     </div>
                     <div className='bg-[#F8F8F8] col-span-4 p-4 rounded-md text-center'>
                         <h1 className='font-bold text-lg my-2'>Contract Design Partner</h1>
                         <p className='text-gray'>Solve design requests in your product on long term collaboration.</p>
                         <div className='flex justify-center'>
-                            <Image src={Product_Redesign} alt="Product Redesign" width={400} />
+                            <Image src={contract_design_partner} alt="Product Redesign" width={400} />
                         </div>
                     </div>
                     <div className='bg-[#F8F8F8] col-span-4 p-4 rounded-md text-center'>
                         <h1 className='font-bold text-lg my-2'>One-time projects</h1>
                         <p className='text-gray'>Designs single time project, landing page, website or app design.</p>
                         <div className='flex justify-center'>
-                            <Image src={Product_Redesign} alt="Product Redesign" width={400} />
+                            <Image src={one_time_projects} alt="Product Redesign" width={400} />
                         </div>
                     </div>
                 </div>

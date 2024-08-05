@@ -21,7 +21,7 @@ const Header = () => {
                 </div>
                 <div className='flex gap-4 capitalize'>
                     {navLinks.map((item => (
-                        <Link href={item.title} className='hover:bg-secondary hover:text-black px-4 py-2 rounded-md'>{item.title}</Link>
+                        <Link key={item.id} href={item.title} className='hover:bg-secondary hover:text-black px-4 py-2 rounded-md'>{item.title}</Link>
                     )))}
                 </div>
                 <div>

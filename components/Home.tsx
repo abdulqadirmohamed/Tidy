@@ -1,11 +1,11 @@
 'use client'
 import { ArrowUpRight, RefreshCcw } from 'lucide-react'
 import React from 'react'
-import logo1 from '../public/img/logo-1.png'
-import logo2 from '../public/img/logo-2.png'
-import logo3 from '../public/img/logo-3.png'
-import logo4 from '../public/img/logo-4.png'
-import logo5 from '../public/img/logo-5.png'
+import logo1 from '../public/img/partners/logo-1.png'
+import logo2 from '../public/img/partners/logo-2.png'
+import logo3 from '../public/img/partners/logo-3.png'
+import logo4 from '../public/img/partners/logo-4.png'
+import logo5 from '../public/img/partners/logo-5.png'
 import Image from 'next/image'
 
 
@@ -44,14 +44,14 @@ const HomePage = () => {
                     <div className="w-full inline-flex flex-nowrap ">
                         <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                             {logos.map((item) => (
-                                <li className='grayscale'>
+                                <li className='grayscale' key={item.id}>
                                     <Image width={100} src={item.logo} alt="Facebook" />
                                 </li>
                             ))}
                         </ul>
                         <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                             {logos.map((item) => (
-                                <li>
+                                <li key={item.id}>
                                     <Image width={100} src={item.logo} alt="Facebook" />
                                 </li>
                             ))}
