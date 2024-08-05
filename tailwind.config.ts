@@ -27,7 +27,7 @@ const config: Config = {
         primary: '#17332D',
         secondary: '#E4F223',
         black: '#09090B',
-        gray: '#717170'
+        // gray: '#717170'
       },
     },
   },
